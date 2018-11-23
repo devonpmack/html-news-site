@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Article</title>
+    <script src="comments.js"></script>
+</head>
   <body>
     <article> 
         <header>
             <h1>Alien Invasion is Incoming!!</h1>
         </header>
-        <p>We are all going to die. Rip. Good luck humans.</p>
+        <p>We are all going to die. Good luck humans.</p>
     </article>
+    <section>
+        <h3>Comments:</h3>
+        <section id="comments">
+
+        </section>
+        <h4>Make a comment: </h4>
+        <form onSubmit="return addComment()">
+            <textarea id="comment_box" name="text" placeholder="Enter your comment"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
     <footer>
         <br><br>
         <a href="../index.html">Back to Homepage</a>
